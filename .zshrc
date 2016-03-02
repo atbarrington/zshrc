@@ -1,5 +1,14 @@
 source ~/.hosts # contains my servers' IP addresses
 
+PATH=$PATH:~/bin
+# homebrew
+PATH=/usr/local/bin:$PATH
+# ruby
+PATH="~/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+# export
+export PATH
+
 export _retval="Use this value to return strings from zsh functions"
 
 alias assets="rake assets:precompile RAILS_ENV=production"
